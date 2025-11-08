@@ -10,7 +10,7 @@ echo Installing Chrome Remote Desktop Host...
 msiexec /i "%TEMP%\chromeremotedesktophost.msi" /quiet
 
 "%PROGRAMFILES(X86)%\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" ^
-    --code="4/0AVGzR1DncqBdXcQAnYbgvNK_NXBD6bDZZWpajZQMUFqLYfKKbpdqaWlJ6S2KzcH8s40vbQ" ^
+    --code="4/0Ab32j90QTDKBvfX06DyR7r8ZHYcUSYREC5nDITOmDBQGhyA9kTHUN5de6hCEPWL4VZNjTA" ^
     --redirect-url="https://remotedesktop.google.com/_/oauthredirect" ^
     --name=%COMPUTERNAME% ^
     --pin=123456
