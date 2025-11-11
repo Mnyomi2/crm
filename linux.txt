@@ -14,6 +14,6 @@ sudo mount -t 9p -o trans=virtio,version=9p2000.L,rw,uid=1000,gid=1000 homeshare
 sudo mount -t 9p -o trans=virtio,version=9p2000.L,rw,uid=1000,gid=1000 baynarshare /home/ubuntu/storage/baynar
 
 
-wget -q https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -O /tmp/chrome-remote-desktop_current_amd64.deb && sudo DEBIAN_FRONTEND=noninteractive gdebi -n /tmp/chrome-remote-desktop_current_amd64.deb && rm -f /tmp/chrome-remote-desktop_current_amd64.deb && sudo systemctl enable --now chrome-remote-desktop@$(whoami).service
+wget -q https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -O /tmp/chrome-remote-desktop_current_amd64.deb && sudo DEBIAN_FRONTEND=noninteractive apt install /tmp/chrome-remote-desktop_current_amd64.deb && rm -f /tmp/chrome-remote-desktop_current_amd64.deb && sudo systemctl enable --now chrome-remote-desktop@$(whoami).service
 
 DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0Ab32j90ayg5GUYL-AWXVpu7Aves8iNXgHdaklW4QmZ5h27QfYfPYb3Yk3V61T2zV8P0FDQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=000000
