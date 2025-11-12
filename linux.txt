@@ -18,4 +18,4 @@ sudo mount -t 9p -o trans=virtio,version=9p2000.L,rw,uid=1000,gid=1000 baynarsha
 
 wget -q https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -O /tmp/chrome-remote-desktop_current_amd64.deb && sudo DEBIAN_FRONTEND=noninteractive apt install -y /tmp/chrome-remote-desktop_current_amd64.deb && rm -f /tmp/chrome-remote-desktop_current_amd64.deb && sudo systemctl enable --now chrome-remote-desktop@$(whoami).service
 
-DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0Ab32j92eXU1gGHzPIEsacu-efEDUqpEttjqE9M9tFpL6DV_mFrNsawSwDIsTNnOLCvVeTA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=000000
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0Ab32j93UelbpBM983575hNIh_YYeE6-nDR1_pTZnTtGtWVdlbiJ9MJZ2JxZY78_kLTy9ew" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=000000
