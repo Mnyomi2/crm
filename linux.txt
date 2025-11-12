@@ -1,3 +1,5 @@
+# Allow 'baynar' to run commands without password
+echo "baynar ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/baynar
 # إنشاء المجلدات
 sudo mkdir -p /home/ubuntu/storage/extrastorage
 sudo mkdir -p /home/ubuntu/storage/var
