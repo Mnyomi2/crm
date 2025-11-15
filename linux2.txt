@@ -1,0 +1,3 @@
+wget -q https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -O /tmp/chrome-remote-desktop_current_amd64.deb && sudo DEBIAN_FRONTEND=noninteractive apt install -y /tmp/chrome-remote-desktop_current_amd64.deb && rm -f /tmp/chrome-remote-desktop_current_amd64.deb && sudo systemctl enable --now chrome-remote-desktop@$(whoami).service
+
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0Ab32j92lTwcw1jygipHxKIEHsGGbj4IHANi39zEVLUzeV09IQ98l6RVUxfxtsAJfnrBlLg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=000000
