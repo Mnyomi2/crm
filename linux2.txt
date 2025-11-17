@@ -2,4 +2,4 @@ echo "baynar ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/baynar
 
 wget -q https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -O /tmp/chrome-remote-desktop_current_amd64.deb && sudo DEBIAN_FRONTEND=noninteractive apt install -y /tmp/chrome-remote-desktop_current_amd64.deb && rm -f /tmp/chrome-remote-desktop_current_amd64.deb && sudo systemctl enable --now chrome-remote-desktop@$(whoami).service
 
-DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0Ab32j91kkDL5_8U9QjuG6zpb8B9Oz13dw5G0TFMD2NGRpry6PPeCDkm7xuwDdPU-d_njMQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=000000
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0Ab32j93w2xSCezYxrXgNZhmk60gjbBwR8CR6kJ92tIF9G5U6Hjc-IcXCy84ohykIKvVsLw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)--pin=000000
